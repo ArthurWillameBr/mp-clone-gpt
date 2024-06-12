@@ -1,4 +1,6 @@
 import { ReactElement } from "react";
+import { KeyInstructions } from "./_components/key-instructions";
+import { ChatInput } from "./_components/chat-input";
 
 function Home(): ReactElement {
   return (
@@ -7,7 +9,8 @@ function Home(): ReactElement {
         CloneGPT
       </h1>
 
-      {/* DESENVOLVA SEU CODIGO AQUI */}
+      <KeyInstructions /> 
+      <ChatInput placeholder="Digite sua chave da API"/>
     </main>
   );
 }
